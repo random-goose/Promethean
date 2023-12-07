@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body>
+
+    <h2>Event Registration Form</h2>
+
+    <form action="submit_form.php" method="post" enctype="multipart/form-data">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required><br>
+
+        <label for="college_name">College Name:</label>
+        <input type="text" id="college_name" name="college_name" required><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <label for="event_name">Event Name:</label>
+        <select id="event_name" name="event_name" required>
+            <option value="option1">Codopoly</option>
+            <option value="option2">Cryptic Quest</option>
+            <option value="option3">Impromptu Blitz</option>
+            <option value="option4">Code Maze</option>
+        </select><br>
+
+        <label for="transaction_id">Transaction ID:</label>
+        <input type="text" id="transaction_id" name="transaction_id" required><br>
+
+        <label for="payment_screenshot">Screenshot of Payment:</label>
+        <input type="file" id="payment_screenshot" name="payment_screenshot" accept="image/*" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
